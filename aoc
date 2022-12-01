@@ -3,6 +3,7 @@ require 'httparty'
 require 'dotenv/load'
 require 'thor'
 require 'benchmark'
+require 'pry'
 lib_files = File.join(File.dirname(__FILE__), 'lib', '*.rb')
 src_files = File.join(File.dirname(__FILE__), 'src', '**', '*.rb')
 Dir[lib_files].each { |file| require file }
